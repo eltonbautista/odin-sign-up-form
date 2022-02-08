@@ -18,40 +18,43 @@
 <body>
     
     <div class="body-container">
-        <img class="genetic-image" src="genetic.jpg" alt="building that looks like a strand of gene"> 
+            <img class="genetic-image" src="genetic.jpg" alt="building that looks like a strand of gene">
+
         <div class="form-body">
             
             <div>
-                <div>
-                    <h2>science_has_come_a_long_way. humans_have_come_closer_than_ever_before_to_reaching_new_heights. will_you_stay_connected_to_the_top?</h2>
+                    <h2>science_has_come_a_long_way.
+                     fitting_in_has_never_been_easier. 
+                     will_you_stay_connected?</h2>
                     <h2>disclaimer: this_is_not_a_real_online_service.</h2>
-                </div>
             </div>
 
             <div class="form-container">
                 <form action="form">
                     <fieldset>
-                        <legend>be modified</legend>
+                        <legend>be_modified: sign_up</legend>
                         
                         <div>
                             <label for="first_name">first_name:</label>
-                            <input type="text" name="first_name" id="first_name">
+                            <input maxlength="15" type="text" name="first_name" id="first_name" required>
 
                             <label for="email">email:</label>
-                            <input type="email" name="email" id="email">
+                            <input type="email" name="email" id="email" required>
 
                             <label for="password">password:</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
                         </div>
                         <div>
                             <label for="last_name">last_name:</label>
-                            <input type="text" name="last_name" id="last_name">
+                            <input maxlength="15" type="text" name="last_name" id="last_name" required>
 
                             <label for="phone_number">phone_number:</label>
-                            <input type="tel" name="phone_number" id="phone_number">
+                            <input pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$" type="tel" name="phone_number" id="phone_number" maxlength="14">
 
                             <label for="confirm_password">confirm_password:</label>
-                            <input type="password" name="confirm_password" id="confirm_password">
+                            <input type="password" name="confirm_password" id="confirm_password" required>
+
+                            <input class="hidden" type="submit" value="" id="submit-form">
                         </div>
 
                     </fieldset>
@@ -59,8 +62,8 @@
             </div>
 
             <div>
-                <button type="submit">create an account</button>
-                <span>already have an account? <button type="button">sign in</button></span>
+                <button type="submit"><label for="submit-form" tabindex="0">create_an_account</label></button>
+                <span>already_have_an_account? <button type="button">sign_in</button></span>
             </div>
 
         </div>

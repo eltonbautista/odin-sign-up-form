@@ -36,6 +36,8 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: jost, sans-serif;
+	min-height: 100vh;
+	min-width: 100vw;
 }
 ol, ul {
 	list-style: none;
@@ -59,14 +61,13 @@ footer {
 	background-color: rgba(123, 33, 200, 0.5);
 	font-size: 20px;
 	height: 5vh;
-	width: 100vw;
 }
 .body-container {
     display: flex;
 }
 .genetic-image {
     height: 95vh;
-    width: 25vw;
+    width: 25%;
 }
 .form-body {
 	height: 95vh;
@@ -83,14 +84,18 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: baseline;
 	gap: 30px;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 600;
 }
 
 .form-body h2:last-child {
 	font-style: italic;
+}
+h2 {
+	margin-left: 30px;
+	width: min(30%, 300px);
 }
 .form-body > div:last-of-type {
 	background-color: rgb(126, 165, 197, 0.3);
@@ -108,7 +113,7 @@ footer {
 
 fieldset {
 	display: flex;
-	gap: 50px;
+	gap: 40px;
 }
 fieldset > legend {
 	font-size: 30px;
@@ -120,18 +125,45 @@ fieldset > legend {
 legend ~ div {
 	display: flex;
 	flex-direction: column;
-	width: 300px;
+	width: min(250px, 20vw);
 	margin-left: 35px;
 	margin-top: 15px;
+	font-size: 21px;
 }
 
 label {
 	margin-top: 10px;
 	margin-bottom: 5px;
-	font-size: 20px;
 }
 
 button {
 	font-family: jost;
-	font-size: 0.7em;
+	font-size: 0.8em;
+}
+
+input {
+	outline: none;
+	border: 1px solid rgba(100, 100, 150, 0.3);
+	background-color: rgb(99, 212, 184, 0.2);
+	box-shadow: 3px black inset;
+}
+
+
+input:focus {
+	background: rgba(161, 160, 238, 0.39);
+	outline: none;
+	border: 3px solid rgba(70, 32, 206, 0.37);
+	border-radius: 4px;
+	box-shadow: 0 0 6px 2px #c73f3f;
+}
+
+input.hidden {
+	visibility: hidden;
+}
+
+img {
+	position: relative;
+}
+.dna {
+	position: absolute;
 }
