@@ -8,3 +8,6 @@ Resources used:
 Background Image: https://unsplash.com/photos/eXoXJrOGqG4 Photo by Alexander Popov
 Side Image: https://pixabay.com/illustrations/dna-biological-helix-analysis-6517209/ Photo by mirerek8
 Font: https://indestructibletype.com/Jost.html Font by Indestructible Type, Designed by Owen Earl
+Regex: https://www.ocpsoft.org/tutorials/regular-expressions/password-regular-expression/
+
+https://www.oreilly.com/library/view/regular-expressions-cookbook/9781449327453/ch04s02.html

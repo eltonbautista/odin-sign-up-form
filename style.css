@@ -37,7 +37,6 @@ body {
 	line-height: 1;
 	font-family: jost, sans-serif;
 	min-height: 100vh;
-	min-width: 100vw;
 }
 ol, ul {
 	list-style: none;
@@ -60,17 +59,56 @@ footer {
 	align-items: center;
 	background-color: rgba(123, 33, 200, 0.5);
 	font-size: 20px;
-	height: 5vh;
+	min-height: 4.6vh;
+	min-width: calc(1000px);
 }
 .body-container {
     display: flex;
+	height: 95.4vh;
+	min-width: calc(1000px);
+}
+.genetic-container {
+	position: relative;
+	text-align: center;
+	height: 100%;
 }
 .genetic-image {
-    height: 95vh;
-    width: 25%;
+    height: 95.4vh;
+    width: 100%;
+	position: relative;
 }
+
+.genetic-container .dna-text {
+	font-size: calc(8px + 1.5vw);
+	position: absolute;
+	top: 40.4%;
+ 	left: 47.5%;
+	transform: translate(-50%, -50%);
+	font-weight: 900;
+	display: inline;
+}
+
+.genetic-container .helix {
+	position: absolute;
+	top: 40.4%;
+ 	left: 91%;
+	transform: translate(-50%, -50%);
+	height: calc(13px + 10vh);
+	width: calc(5px + 6vw);
+}
+.dna {
+width: 100%;
+height: 100px;
+ position: absolute;
+ top: 40.4%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: rgb(255, 255, 255, 0.2);
+}
+
+
 .form-body {
-	height: 95vh;
+	height: 95.4vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -110,11 +148,12 @@ h2 {
 	font-size: 1.5em;
 }
 
-
 fieldset {
 	display: flex;
 	gap: 40px;
+	height: 100%;
 }
+
 fieldset > legend {
 	font-size: 30px;
 	font-weight: 600;
@@ -154,7 +193,7 @@ input:focus {
 	outline: none;
 	border: 3px solid rgba(70, 32, 206, 0.37);
 	border-radius: 4px;
-	box-shadow: 0 0 6px 2px #c73f3f;
+	box-shadow: 0 0 6px 2px #3fa0c7;
 }
 
 input.hidden {
@@ -167,3 +206,20 @@ img {
 .dna {
 	position: absolute;
 }
+
+p {
+	background: -webkit-linear-gradient(rgb(61, 56, 56), rgb(207, 22, 22));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+h2, label, legend, span, button {
+	color: rgba(2, 21, 126, 0.651);
+}
+
+input:focus:invalid {
+background-color: #e419197e;
+box-shadow: 0 0 6px 2px #c73f3f;
+}
+
+

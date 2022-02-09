@@ -18,8 +18,12 @@
 <body>
     
     <div class="body-container">
+        <div class="genetic-container">
             <img class="genetic-image" src="genetic.jpg" alt="building that looks like a strand of gene">
-
+            <div class="dna"></div>
+            <p class="dna-text">DeoxyriboNucleAse</p>
+            <img src="helix.png" alt="dna helix" class="helix">
+        </div>
         <div class="form-body">
             
             <div>
@@ -36,25 +40,26 @@
                         
                         <div>
                             <label for="first_name">first_name:</label>
-                            <input maxlength="15" type="text" name="first_name" id="first_name" required>
+                            <input maxlength="15" type="text" name="first_name" id="first_name" required pattern="^[^\d]+$">
 
                             <label for="email">email:</label>
                             <input type="email" name="email" id="email" required>
 
                             <label for="password">password:</label>
-                            <input type="password" name="password" id="password" required>
+                            <input type="password" name="password" id="password" required pattern="^(?:(?:(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]))|(?:(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))|(?:(?=.*[0-9])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))|(?:(?=.*[0-9])(?=.*[a-z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))).{8,32}$">
                         </div>
                         <div>
                             <label for="last_name">last_name:</label>
-                            <input maxlength="15" type="text" name="last_name" id="last_name" required>
+                            <input maxlength="15" type="text" name="last_name" id="last_name" required pattern="^[^\d]+$">
 
                             <label for="phone_number">phone_number:</label>
                             <input pattern="^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$" type="tel" name="phone_number" id="phone_number" maxlength="14">
 
-                            <label for="confirm_password">confirm_password:</label>
-                            <input type="password" name="confirm_password" id="confirm_password" required>
+                            <label for="confirm_password" id="hello">confirm_password:</label>
+                            <input type="password" name="confirm_password" id="confirm_password" required pattern="^(?:(?:(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]))|(?:(?=.*[a-z])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))|(?:(?=.*[0-9])(?=.*[A-Z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))|(?:(?=.*[0-9])(?=.*[a-z])(?=.*[*.!@$%^&(){}[]:;<>,.?/~_+-=|\]))).{8,32}$">
 
                             <input class="hidden" type="submit" value="" id="submit-form">
+                            
                         </div>
 
                     </fieldset>
@@ -69,7 +74,7 @@
         </div>
     </div>
 
-    <footer>Copyright: The Odin Project</footer>
+    <footer>copyright: psychtotech</footer>
 
 </body>
 </html>
